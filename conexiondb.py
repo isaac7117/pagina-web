@@ -2,7 +2,7 @@ from pymongo import MongoClient
 
 class ConexionMongo:
     def __init__(self):
-        self.cliente = MongoClient("mongodb://localhost:27017/")
+        self.cliente = MongoClient("mongodb+srv://Vega:mariconesredsocial@socialshark.wudtw04.mongodb.net/")
         self.db = self.cliente['redsocial']
         self.publicaciones = self.db['publicaciones']
         
